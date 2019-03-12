@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	var add = (function () {
+		var counter = 0;
+
+		return function () {
+				//counter += 1; 
+				return ++counter;
+			}
+	})();
+
+	add();
+	add();
+	add();// the counter is now 3
+	console.log(add());
+	
+	//=================================================================
+	
+	var account = (function(){
+		var balance = 1000;
+		return {
+			name:"John",
+			getBalance:function(){
+				return balance;
+			},
+			addIntrest:function(intrest){
+				balance+=intrest;
+			}
+		}
+	}());
+
+	console.log(account.getBalance());
+	account.addIntrest(-100);
+	console.log(account.getBalance());
+
+	//=================================================================
+	
+	var account2 = (function(){
+		var balance = 1000;
+		function getBalance(){
+			return balance;
+		};
+		function addIntrest(intrest){
+			balance+=intrest;
+		};
+		return {
+			name:"John",
+			getBalance:getBalance,
+			addIntrest:addIntrest
+		}
+	}());
+
+
+
+
+
+
+
+
+
+
+
+
+var myFuncExpression = (function(){
+	var privateVar = 500;
+	return {
+		increse:function(){
+			return privateVar+100;
+		},
+		decrese:function(){
+			return privateVar-100;
+		},
+		show:function(){
+			return privateVar;
+		}
+	}
+}());
+
+console.log(myFuncExpression.show());
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+</script>
+</body>
+</html>

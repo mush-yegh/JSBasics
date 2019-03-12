@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script>
+	//Declaration   hoisting happens!
+	function evenOrOdd(num){
+		if (num%2 == 0) {
+			return "even"
+		}
+		return "odd";
+	}
+	console.log(evenOrOdd(9));
+
+	//Expression hoisting doesn't happen!
+	var evenOrOdd2 = function(num){
+		if (num%2 == 0) {
+			return "even"
+		}
+		return "odd";
+	};
+	console.log(evenOrOdd2(7));
+</script>
+</body>
+</html>

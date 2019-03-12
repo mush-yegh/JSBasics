@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script>
+	//Object
+	var student = {
+		name:"Bob",
+		score:95
+	}
+	var s1 = new Object();
+	s1.name = "Bob";
+	s1.score = 99;
+
+	console.log(student.name);
+	console.log(s1.name);
+
+	//Array
+	var studentNames = ["John","Bob","Harry"];
+	var sn = new Array("John","Bob","Harry");
+	console.log(studentNames[0]);
+	console.log(sn[0]);
+
+	//Function
+	function hello(name){
+		return "Hello " + name;
+	}
+	var myFunc = new Function("name", "return 'Hello ' + name");
+
+	//RegExp
+	var reg = /\d+/;
+	var regEx = new RegExp("\\d+");
+
+	console.log(typeof student);//object
+	console.log(typeof studentNames);//object
+	console.log(typeof hello);//function
+
+	console.log(student instanceof Object);//true
+	console.log(studentNames instanceof Array);//true
+	console.log(hello instanceof Function);//true
+</script>
+</body>
+</html>

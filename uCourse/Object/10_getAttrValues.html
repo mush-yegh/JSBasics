@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	var creditCard = {
+		name:"John"
+	};
+	var descriptor = Object.getOwnPropertyDescriptor(creditCard,"name");
+	console.log("enumerable: "+descriptor.enumerable);
+	console.log("configurable: "+descriptor.configurable);
+	console.log("writable: "+descriptor.writable);
+	console.log("value: "+descriptor.value);
+</script>
+</body>
+</html>

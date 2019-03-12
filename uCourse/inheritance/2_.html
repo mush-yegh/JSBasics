@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	var project1 = {
+		name:"Road Work",
+		display:function(){
+			console.log(this.name);
+		}
+	};
+
+	/*console.log(project.hasOwnProperty("name"));
+	var proto = Object.getPrototypeOf(project);
+	console.log(proto === Object.prototype);*/
+
+	var  project2 = Object.create(project1,{
+		name:{
+			configurable:true,
+			enumerable:true,
+			value:"Bridge Work",
+			writable:true
+		}
+	});
+
+	project2.display();
+</script>
+</body>
+</html>

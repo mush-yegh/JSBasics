@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	var course = {
+		name:"JS fundamentals",
+		description:"some text"
+	}
+
+	console.log("name" in course);
+	console.log(course.hasOwnProperty("description"));
+	console.log("toString" in course);
+	console.log(course.hasOwnProperty("toString"));
+
+	delete course.description;
+	console.log(course.hasOwnProperty("description"));
+
+	
+</script>
+</body>
+</html>

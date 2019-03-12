@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	var creditCard = {
+		name:"John"
+	};
+	Object.defineProperty(creditCard,"name",{
+		enumerable:false
+	});
+	console.log(creditCard.name);
+	console.log("name" in creditCard);
+	console.log(creditCard.propertyIsEnumerable("name"));
+
+</script>
+</body>
+</html>

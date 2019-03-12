@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	var course = {
+		name:"JS fundamentals",
+		description:"some text"
+	}
+
+	for (var eachProperty in course) {
+		console.log(eachProperty);
+		console.log(course[eachProperty]);
+	}
+
+	var allProps = Object.keys(course);
+	for (var i = 0; i < allProps.length; i++) {
+		console.log("property "+i+" = "+allProps[i]);
+		console.log("propertyValue "+i+" = "+course[allProps[i]]);
+	}
+</script>
+</body>
+</html>

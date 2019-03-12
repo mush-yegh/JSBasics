@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	var creditCard = {};
+
+	Object.defineProperty(creditCard,"name",{
+		value:"John",
+		enumerable:true,
+		configurable:true,
+		writable:false
+	});
+	console.log(creditCard.name);
+
+	creditCard.name = "John777";
+	console.log(creditCard.name);
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	var passenger = {
+		name:"John"
+	}
+	console.log("name" in passenger);
+	console.log(passenger.hasOwnProperty("name"));
+
+	console.log(Object.prototype.hasOwnProperty("hasOwnProperty"));
+
+
+	console.log(Object.getPrototypeOf(passenger) === Object.prototype);
+	
+	passenger.toString = function(){
+		return "My tostring";
+	}
+
+	console.log(passenger.toString());
+</script>
+</body>
+</html>

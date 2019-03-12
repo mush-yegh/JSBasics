@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script>
+	//Declaration   hoisting happens!
+	function evenOrOdd(num){
+		console.log("arguments[0] = " +arguments[0]);
+		console.log("arguments.length = " +arguments.length);
+		console.log("named arguments length of function is = " +evenOrOdd.length);
+
+		if (num%2 == 0) {
+			return "even"
+		}
+		return "odd";
+	}
+	console.log(evenOrOdd(9,10,11));
+</script>
+</body>
+</html>

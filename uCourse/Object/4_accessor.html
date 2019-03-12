@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	var creditCard = {
+		_name:"John",//shoul be used as private property
+
+		get name(){
+			return this._name;
+		},
+		set name(value){
+			this._name = value;
+		}
+	};
+	console.log("first "+creditCard._name);
+
+	console.log(creditCard.name);
+	creditCard.name = "Bob";
+	console.log(creditCard.name);
+
+
+</script>
+</body>
+</html>
